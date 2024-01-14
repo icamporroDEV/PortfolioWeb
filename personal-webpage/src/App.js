@@ -11,9 +11,9 @@ function App() {
       <header className="App-header">
       <Presentation/>
       </header>
-      <Container disableGutters>
+      <div>
         <AboutMe/>
-      </Container>
+      </div>
     </div>
   );
 }

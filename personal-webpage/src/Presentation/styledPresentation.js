@@ -43,16 +43,18 @@ export const PresentationContainer = styled(Container)({
 
 
   export const TypoIntroduction = styled(Typography)({
-   fontSize:'20px'
+   fontSize:'20px',
+   color:'white'
   });
   export const TypoTitle = styled(Typography)({
     fontSize:'35px',
-    fontWeight:'bold'
+    fontWeight:'bold',
+    color:'white'
    });
    export const TypoSubTitle = styled(Typography)({
     fontSize:'28px',
     fontWeight:'bold',
-    color:'grey'
+    color:'rgb(124, 127, 130)'
    });
 
 

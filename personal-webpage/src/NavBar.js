@@ -1,8 +1,8 @@
-import { Typography } from '@mui/material';
 import React from 'react';
 
-import { MirrorContainer, NavBarButton, OptionsContainer, StyledAppbar, TypoTitle } from './NavBarComponents/styledNavbarComponents';
-
+import { MirrorContainer, NavBarButton, OptionsContainer, StyledAppbar, TypoTitle,AvatarImage, MirrorContainerClose, NameTitle, SubTitle } from './NavBarComponents/styledNavbarComponents';
+import ProfilePic from './icons/NachoPic.jpg';
+import { Container, Typography } from '@mui/material';
 
 
 
@@ -11,22 +11,28 @@ import { MirrorContainer, NavBarButton, OptionsContainer, StyledAppbar, TypoTitl
     <section id='navbar' aria-label={'navbar'}>
       <StyledAppbar position='static' >
         <MirrorContainer>
-            <TypoTitle >
-              icamporroDEV
-            </TypoTitle>
-            <OptionsContainer disableGutters>
+            <MirrorContainerClose  >
+            <AvatarImage src={ProfilePic} alt="Avatar" />
+            <div disableGutters>
+            <NameTitle>
+              Ignacio Camporro
+              </NameTitle>
+              <SubTitle>
+              Front End Developer
+              </SubTitle>
+            </div>           
+            </MirrorContainerClose>
+            <OptionsContainer >
                 <NavBarButton variant='body1'>
-                    Home
+                    A
                 </NavBarButton>
                 <NavBarButton variant='body1'>
-                    About
+                    B
                 </NavBarButton>
                 <NavBarButton variant='body1'>
-                    Proyects
+                    C
                 </NavBarButton>
-                <NavBarButton variant='body1'>
-                    Contact
-                </NavBarButton>
+           
             </OptionsContainer>
            
         </MirrorContainer>

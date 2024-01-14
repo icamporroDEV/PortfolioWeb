@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 
 export const LargeSquareImage = styled.img`
 width: 400px;
@@ -26,9 +26,18 @@ export const RoundedBox = styled(Box)({
     padding:'10px',
     border:'1px solid black'
   });
+  export const AboutMeContainer = styled(Container)({
+    backgroundColor: 'rgb(18,18,18)'
+  });
+  export const CarrouselContainer = styled(Container)({
+marginTop:'50px'  });
 
+export const ProyectTitle = styled(Typography)({
+  color:'white',
+marginBottom:'25px' });
   export const MainGrid = styled(Grid)({
-marginTop:'50px'
+        marginTop:'50px',
+        marginBottom:'50px',
   });
 
   export const AboutMeInfoContainer = styled(Container)({
@@ -38,3 +47,13 @@ marginTop:'50px'
     alignItems: 'flex-start',
     width: '100%',   
   });
+
+  export const TypoTitleAboutMe = styled(Typography)({
+    fontSize:'20px',
+    fontWeight:'bold'
+   });
+   export const TypoSubTitleAboutMe = styled(Typography)({
+    fontSize:'15px',
+    fontWeight:'bold',
+    color:'grey'
+   });
