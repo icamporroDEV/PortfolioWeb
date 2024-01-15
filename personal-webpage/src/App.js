@@ -7,13 +7,15 @@ import { AboutMe } from './AboutMe/AboutMe';
 function App() {
   return (
     <div className="App">
-       <NavBar/>
-      <header className="App-header">
+      
+      <NavBar/>
+    
+      <section className="App-header">
       <Presentation/>
-      </header>
-      <div>
+      </section>
+      <section>
         <AboutMe/>
-      </div>
+      </section>
     </div>
   );
 }

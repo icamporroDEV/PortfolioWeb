@@ -9,7 +9,7 @@ export const TechStack = () => {
   return (
     <Container>
     <StackContainer disableGutters>
-        <Typography color='white'variant='h8'>TechStack</Typography>
+        <Typography color='#E0E0E0'variant='h8'>TechStack</Typography>
         <ReactIcon width="35" height="35" />
         <HTML5Icon width="35" height="35" />
         <CSSIcon width="35" height="35" />

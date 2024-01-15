@@ -8,12 +8,11 @@ import MICA2 from './MICA2.jpg';
 import MICA3 from './MICA3.jpg';
 export const AboutMe = () => {
   const images = [MICA1, MICA2, MICA3];
-  console.log(images)
   return (
     <AboutMeContainer disableGutters>
       <TypoTitle>Work</TypoTitle>
       <CarrouselContainer>
-        <ProyectTitle>MICA.GOB.AR</ProyectTitle>
+        <ProyectTitle>mica.gob.ar</ProyectTitle>
       <Carrousel images={images}/>
       </CarrouselContainer>
  

@@ -7,6 +7,9 @@ export const PresentationContainer = styled(Container)({
     alignItems: 'center',
     marginBottom:'100px',
     color:'black',
+backgroundColor:'rgb(18,18,18)',
+    borderRadius:'100% 0% 100% 0% / 0% 0% 100% 100%', height:'700px', minWidth:'100%'
+
   });
 
   export const StackContainer = styled(Container)({
@@ -31,30 +34,56 @@ export const PresentationContainer = styled(Container)({
     border: '1px solid',
     marginLeft:'15px'
   });
-  export const RoundButtonBlack = styled(Button)({
+  export const RoundButtonSalmon= styled(Button)({
     borderRadius: '17px',
-    backgroundColor: 'Black',
-    color: 'white',
+    background: 'linear-gradient(to right, #FF8A80, #FFCDD2)', // Gradiente con tono salmón
+    color: 'black',
     width: '110px',
-    textTransform: 'inherit',
-    border: '1px solid',
-    marginLeft:'15px'
+    textTransform: 'capitalize',
+    border: 'none',
+    marginLeft: '15px',
+    '&:hover': {
+      background: 'linear-gradient(to right, #FF5252, #FF8A80)', // Cambio de color al pasar el mouse
+    },
+    '&:active': {
+      transform: 'translateY(2px)',
+    },
   });
-
-
+  export const OutlineRoundButtonSalmon = styled(Button)({
+    borderRadius: '17px',
+    background: 'none', // Sin fondo de color en el interior del botón
+    color: '#FF8A80', // Color de texto igual al tono salmón
+    width: '110px',
+    textTransform: 'capitalize',
+    border: '2px solid transparent', // Borde inicialmente transparente
+    marginLeft: '15px',
+    transition: 'border 0.3s ease-in-out', // Agregar transición al borde
+    '&:hover': {
+      border: '2px solid #FF8A80', // Cambio de color del borde al pasar el mouse
+    },
+    '&:active': {
+      transform: 'translateY(2px)',
+    },
+  });
+ 
   export const TypoIntroduction = styled(Typography)({
    fontSize:'20px',
    color:'white'
   });
   export const TypoTitle = styled(Typography)({
-    fontSize:'35px',
+    fontSize:'45px',
     fontWeight:'bold',
-    color:'white'
+    color:'rgb(18,18,18)'
+   });
+   export const TypoNameTitle = styled(Typography)({
+    fontSize:'45px',
+    fontWeight:'bold',
+    color:'#E0E0E0'
    });
    export const TypoSubTitle = styled(Typography)({
     fontSize:'28px',
     fontWeight:'bold',
-    color:'rgb(124, 127, 130)'
+    color:'#FF725C'
    });
 
 

@@ -3,12 +3,13 @@ import React from 'react';
 import { MirrorContainer, NavBarButton, OptionsContainer, StyledAppbar, TypoTitle,AvatarImage, MirrorContainerClose, NameTitle, SubTitle } from './NavBarComponents/styledNavbarComponents';
 import ProfilePic from './icons/NachoPic.jpg';
 import { Container, Typography } from '@mui/material';
+import { OutlineRoundButtonSalmon } from './Presentation/styledPresentation';
 
 
 
  const NavBar = () => {
   return (
-    <section id='navbar' aria-label={'navbar'}>
+    <div id='navbar' aria-label={'navbar'}>
       <StyledAppbar position='static' >
         <MirrorContainer>
             <MirrorContainerClose  >
@@ -23,21 +24,21 @@ import { Container, Typography } from '@mui/material';
             </div>           
             </MirrorContainerClose>
             <OptionsContainer >
-                <NavBarButton variant='body1'>
+                <OutlineRoundButtonSalmon variant='body1'>
                     A
-                </NavBarButton>
-                <NavBarButton variant='body1'>
+                </OutlineRoundButtonSalmon>
+                <OutlineRoundButtonSalmon variant='body1'>
                     B
-                </NavBarButton>
-                <NavBarButton variant='body1'>
+                </OutlineRoundButtonSalmon>
+                <OutlineRoundButtonSalmon variant='body1'>
                     C
-                </NavBarButton>
+                </OutlineRoundButtonSalmon>
            
             </OptionsContainer>
            
         </MirrorContainer>
       </StyledAppbar>
-    </section>
+    </div>
   );
 };
 export default NavBar;

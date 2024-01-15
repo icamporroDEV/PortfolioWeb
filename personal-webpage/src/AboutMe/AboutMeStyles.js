@@ -27,7 +27,8 @@ export const RoundedBox = styled(Box)({
     border:'1px solid black'
   });
   export const AboutMeContainer = styled(Container)({
-    backgroundColor: 'rgb(18,18,18)'
+    backgroundColor: '#FF725C',
+    minWidth:'100%'
   });
   export const CarrouselContainer = styled(Container)({
 marginTop:'50px'  });
