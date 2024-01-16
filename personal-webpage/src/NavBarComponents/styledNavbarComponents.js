@@ -3,25 +3,28 @@ import { AppBar, Button, Container, Typography } from '@mui/material';
 
 
 export const StyledAppbar = styled(AppBar)({
-    backgroundColor: 'rgb(18,18,18)',
+    backgroundColor: '#170449',
+    // background-image: linear-gradient(0deg, #795879 0%, #170449 100%),
     color: 'white',
-    padding: '10px 20px',
+    padding: '5px 0px',
     fontSize: '20px',
     border: 'none',
     display:'flex',
-    height:'80px',
-    paddingTop:'30px'
+    height:'50px',
+    // position:'fixed',
+    // zIndex:1
    
   });
 
   export const TypoTitle = styled(Typography)({
   fontSize:'20px',
   fontWeight:'bold'
-   
+
   });
   export const NameTitle = styled(Typography)({
    fontSize:'14px',
-   fontWeight:600
+   fontWeight:600,
+ 
   });
   export const SubTitle = styled(Typography)({
     fontSize:'11px',
@@ -45,7 +48,8 @@ export const StyledAppbar = styled(AppBar)({
     display: 'flex',
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
-    width: '100%',   
+    width: '50%',   
+    
   });
 
   export const NavBarButton = styled(Button)({

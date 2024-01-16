@@ -27,8 +27,10 @@ export const RoundedBox = styled(Box)({
     border:'1px solid black'
   });
   export const AboutMeContainer = styled(Container)({
-    backgroundColor: '#FF725C',
-    minWidth:'100%'
+    minWidth:'100%',
+    backgroundImage: 'linear-gradient(0deg, #170449 0%, #795879 50%)',
+    height:'1000px'
+
   });
   export const CarrouselContainer = styled(Container)({
 marginTop:'50px'  });

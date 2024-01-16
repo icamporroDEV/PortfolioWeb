@@ -1,8 +1,15 @@
-.App {
-  text-align: center;
-  
+*{
+  margin:0;
+  padding:0;
+
 }
 
+
+
+.App {
+
+  background: linear-gradient(0deg, #795879 0%, #170449 100%);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -10,7 +17,8 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  position: relative;
+
 }
 section{
   position: relative;
@@ -29,13 +37,12 @@ section{
 }
 
 .App-header {
-  background-color: #FF725C;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  height:700px;
+  height:auto;
 }
 
 .App-link {

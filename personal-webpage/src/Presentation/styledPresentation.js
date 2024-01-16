@@ -1,17 +1,16 @@
 import styled from '@emotion/styled';
-import { Button, Container, Typography } from '@mui/material';
+import { Button, Container, Typography, keyframes } from '@mui/material';
 
 export const PresentationContainer = styled(Container)({
- display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom:'100px',
-    color:'black',
-backgroundColor:'rgb(18,18,18)',
-    borderRadius:'100% 0% 100% 0% / 0% 0% 100% 100%', height:'700px', minWidth:'100%'
-
-  });
-
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  color: 'white', 
+  minWidth: '100%',
+  backgroundImage: 'linear-gradient(0deg, #795879 0%, #170449 100%)',
+  width: '100%',
+  height: '100vh',
+});
   export const StackContainer = styled(Container)({
     display: 'flex',
     justifyContent: 'center',
@@ -25,25 +24,17 @@ backgroundColor:'rgb(18,18,18)',
   export const ButtonContainer = styled(Container)({
   marginTop:'25px'
   });
-  export const RoundButton = styled(Button)({
+
+  export const RoundButton= styled(Button)({
     borderRadius: '17px',
-    backgroundColor: 'transparent',
-    color: 'black',
-    width: '110px',
-    textTransform: 'inherit',
-    border: '1px solid',
-    marginLeft:'15px'
-  });
-  export const RoundButtonSalmon= styled(Button)({
-    borderRadius: '17px',
-    background: 'linear-gradient(to right, #FF8A80, #FFCDD2)', // Gradiente con tono salmón
-    color: 'black',
+    background: 'transparent', // Gradiente con tono salmón
+    color: 'white',
     width: '110px',
     textTransform: 'capitalize',
-    border: 'none',
+    border: '2px solid #ee609c',
     marginLeft: '15px',
     '&:hover': {
-      background: 'linear-gradient(to right, #FF5252, #FF8A80)', // Cambio de color al pasar el mouse
+      background:'linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)', // Cambio de color al pasar el mouse
     },
     '&:active': {
       transform: 'translateY(2px)',
@@ -51,8 +42,8 @@ backgroundColor:'rgb(18,18,18)',
   });
   export const OutlineRoundButtonSalmon = styled(Button)({
     borderRadius: '17px',
-    background: 'none', // Sin fondo de color en el interior del botón
-    color: '#FF8A80', // Color de texto igual al tono salmón
+    background: 'none', 
+    color: '#FF8A80', 
     width: '110px',
     textTransform: 'capitalize',
     border: '2px solid transparent', // Borde inicialmente transparente
@@ -65,26 +56,80 @@ backgroundColor:'rgb(18,18,18)',
       transform: 'translateY(2px)',
     },
   });
- 
+
+  export const ArsatText = styled.span`
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  fontSize:'9vh',
+  `;
+
   export const TypoIntroduction = styled(Typography)({
-   fontSize:'20px',
-   color:'white'
+    fontSize:'2.5vh',
+   color:'white',
+   marginTop:'5px'
   });
   export const TypoTitle = styled(Typography)({
-    fontSize:'45px',
+    fontSize:'30px',
+    marginTop:'20px',
     fontWeight:'bold',
-    color:'rgb(18,18,18)'
+    textAlign:'center',
+    color:'#ffffff'
    });
+   export const SubtitleContainer = styled(Container)({
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+ 
+   });
+ 
+ 
    export const TypoNameTitle = styled(Typography)({
-    fontSize:'45px',
+    fontSize:'8vh',
     fontWeight:'bold',
-    color:'#E0E0E0'
+    color:'white',
+    letterSpacing: '2.2px',
+    // textShadow: '1px 3px 11px rgba(0,0,0,.3)'
+    '@media (max-width: 600px)': {
+      fontSize:'15vw',
+      textAlign:'justify',
+      lineHeight:'auto'
+    },
    });
-   export const TypoSubTitle = styled(Typography)({
-    fontSize:'28px',
-    fontWeight:'bold',
-    color:'#FF725C'
-   });
+   const typingAnimation = keyframes`
+   from { width: 0 }
+   to { width: 50% }
+ `;
+ 
+ const blinkCaretAnimation = keyframes`
+   from, to { border-color: transparent }
+   50% { border-color: white }
+ `;
+ 
+ export const TypoSubTitle = styled(Typography)`
+ font-size: 6vh;
+ font-weight: bold;
+ background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+ color: transparent;
+ -webkit-background-clip: text;
+ background-clip: text;
+ padding-right: 5px;
+ overflow: hidden;
+ border-right: .15em solid white;
+ white-space: nowrap;
+ letter-spacing: .15em;
+ animation: ${typingAnimation} 3.5s steps(40, end), ${blinkCaretAnimation} .75s step-end infinite;
+
+ ${'' /* Media Query */}
+ @media (max-width: 600px) {
+   font-size: 6vw;
+   text-align: justify;
+   line-height: auto;
+   display: 
+ }
+`;
+
 
 
   export const LargeRoundImage = styled.img`
